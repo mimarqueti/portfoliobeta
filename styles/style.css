@@ -44,6 +44,7 @@ body {
     display: flex;
     align-items:center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
@@ -204,6 +205,34 @@ body {
     padding: 48px 0 0 0;
 }
 
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 6%;
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+        align-items: center
+    }
+
+    /* curriculo */
+    .curriculo__principal {
+        flex-direction: column;
+    }
+
+    .curriculo__principal__informacoes {
+        align-items: flex-start;
+    }
+}
 .curriculo__corpo__texto {
     font-family: var(--fonte-secundaria);
     font-size: 1.25rem;
